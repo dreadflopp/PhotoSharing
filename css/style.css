@@ -1,0 +1,227 @@
+/*******************************************************************************
+ * Projekt, Kurs: DT161G
+ * File: style.css
+ * Desc: Style sheets for Projekt
+ * 
+ * Mattias Lindell
+ * mali1624
+ * mali1624@student.miun.se
+ ******************************************************************************/
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    margin: auto;
+    font: 13px/1.2 Helvetica, Arial, sans-serif;
+    background: #000000;
+}
+
+body {
+    color: #FFFFFF;
+}
+
+header {
+    padding: 10px;
+    margin-bottom: 50px;
+    background: #2c2f34;
+}
+
+header div {
+    margin: auto;
+    width: 1024px;
+}
+
+main {
+    margin: auto;
+    width: 960px;
+    display: flex;
+    min-height: 500px;
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #2c2f34;
+
+}
+
+section {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #2c2f34;
+}
+
+section:nth-last-of-type(1) {
+    flex-grow: 1;
+}
+
+h1 {
+    display: inline;
+    font-size: 30px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin-right: 20px;
+
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+aside h2 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2eaf61;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    line-height: 1.8;
+    border-bottom: 1px solid #2eaf61;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav li {
+
+}
+
+input[type=text], input[type=password] {
+    background: #000000;
+    color: #FFFFFF;
+    width: 150px;
+    padding: 2px 5px;
+    margin: 12px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 1px solid #2eaf61;
+}
+
+input[type=button], #fileLabel {
+    background-color: #2eaf61;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 6px 20px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+input[type=file] {
+    display: none;
+}
+
+input[type=checkbox] {
+    margin: 12px;
+}
+
+#logoutButton, #deleteCtg, #deleteMbr {
+    background-color: #af2423
+}
+
+select {
+    background: #000000;
+    color: #888888;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 3px;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#login {
+    line-height: 40px;
+    float: right;
+}
+
+#logout {
+    display: none;
+    line-height: 40px;
+    float: right;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#largeImage {
+    display: block;
+    border: 1px solid black;
+    box-shadow: 0 0 0 2px #414141;
+    max-width: 700px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#largeImage:hover {
+    box-shadow: 0 0 0 2px #686868;
+}
+
+.thumbnail {
+    border: 1px solid black;
+    box-shadow: 0 0 0 2px #414141;
+    width: 150px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 0 2px #686868;
+}
+
+#createCategory, #category {
+    margin-bottom: 60px;
+}
